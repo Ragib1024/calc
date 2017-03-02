@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<form name="CalCulator">
+	<input type="text" name="DisplayCalc">
+	<button type="button" onclick="ClickOne()">1</button>
+	<button type="button" onclick="ClickTwo()">2</button>
+	<button type="button" onclick="ClickThree()">3</button>
+	<button type="button" onclick="ClickFour()">4</button>
+	<button type="button" onclick="ClickFive()">5</button>
+	<button type="button" onclick="ClickSix()">6</button>
+	<button type="button" onclick="ClickSeven()">7</button>
+	<button type="button" onclick="ClickEight()">8</button>
+	<button type="button" onclick="ClickNine()">9</button>
+	<button type="button" onclick="ClickZero()">0</button>
+	<button type="button" onclick="ClickDecimal()">.</button>
+
+
+	<button type="button" onclick="ClickPlus()">+</button>
+	<button type="button" onclick="ClickMinus()">-</button>
+	<button type="button" onclick="ClickDevide()">/</button>
+	<button type="button" onclick="ClickMultipy()">*</button>
+	<button type="button" onclick="ClickEqual()">=</button>
+	<button type="button" onclick="ClickClear()">C</button>
+</form>
+
+<script>
+
+function ClickOne(){
+	document.CalCulator.DisplayCalc.value +=1;
+}
+function ClickTwo(){
+	document.CalCulator.DisplayCalc.value +=2;
+}
+
+function ClickThree(){
+	document.CalCulator.DisplayCalc.value +=3;
+}
+
+function ClickFour(){
+	document.CalCulator.DisplayCalc.value +=4;
+}
+
+function ClickFive(){
+	document.CalCulator.DisplayCalc.value +=5;
+}
+
+function ClickSix(){
+	document.CalCulator.DisplayCalc.value +=6;
+}
+
+function ClickSeven(){
+	document.CalCulator.DisplayCalc.value +=7;
+}
+
+function ClickEight(){
+	document.CalCulator.DisplayCalc.value +=8;
+}
+
+function ClickNine(){
+	document.CalCulator.DisplayCalc.value +=9;
+}
+
+function ClickZero(){
+	document.CalCulator.DisplayCalc.value +=0;
+}
+
+function ClickDecimal(){
+	document.CalCulator.DisplayCalc.value +=".";
+}
+
+function ClickPlus(){
+	document.CalCulator.DisplayCalc.value +="+";
+}
+
+function ClickMinus(){
+	document.CalCulator.DisplayCalc.value +="-";
+}
+
+function ClickDevide(){
+	document.CalCulator.DisplayCalc.value +="/";
+}
+
+function ClickMultipy(){
+	document.CalCulator.DisplayCalc.value +="*";
+} 
+
+function ClickClear(){
+	document.CalCulator.DisplayCalc.value =" ";
+}
+
+function ClickEqual(){
+	var result=eval(document.CalCulator.DisplayCalc.value);
+	document.CalCulator.DisplayCalc.value=result;
+}
+
+
+
+</script>
+
+</body>
+</html>

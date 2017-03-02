@@ -1,0 +1,18 @@
+form{
+	width: 40%;
+	margin: 0 auto;
+}
+form input{
+	width: 100%;
+	background-color: oldlace;
+	padding: 10px 0px;
+	font-size: 18px;
+	color: black;
+}
+form button{
+	width: 25%;
+	float: left;
+	background-color: blue;
+    font-size: 18px;
+    color: white;
+}
